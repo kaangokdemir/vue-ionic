@@ -1,17 +1,18 @@
-<template>
-  <div id="container">
-    <strong>{{ name }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<template lang="pug">
+#container
+  strong {{ name }}
+  p Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a>
 </template>
 
 <script lang="ts">
-
 export default {
   name: 'ExploreContainer',
   props: {
-    name: String
-  }
+    name: {
+      type: String,
+      default: '',
+    },
+  },
 }
 </script>
 
